@@ -1,0 +1,25 @@
+//Подключение settings (main settings project)
+@import '../config/settings.scss';
+
+//Подключение static file scss (reset styles, fonts)
+@import '../scss/fonts.scss';
+@import '../scss/reset.scss';
+@import '../scss/base.scss';
+
+//Подключение widgets (widgets element)
+@import 'ui-kit/nav.scss';
+@import 'ui-kit/logo.scss';
+@import 'ui-kit/interactive.scss';
+@import 'ui-kit/title.scss';
+@import 'ui-kit/menu-icon.scss';
+
+//Подключение ROUTES 
+// @import '../routes/my-route/my-route.scss';
+
+//Подключение components (main components, section)
+@import 'sections/header/header';
+
+//SECTION---
+
+//---
+@import 'sections/footer/footer';
