@@ -12,6 +12,7 @@
 @import 'ui-kit/interactive.scss';
 @import 'ui-kit/title.scss';
 @import 'ui-kit/menu-icon.scss';
+@import 'ui-kit/canvas.scss';
 
 //Подключение ROUTES 
 // @import '../routes/my-route/my-route.scss';
@@ -20,6 +21,6 @@
 @import 'sections/header/header';
 
 //SECTION---
-
+@import 'sections/canvas/canvas';
 //---
 @import 'sections/footer/footer';

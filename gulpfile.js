@@ -7,6 +7,7 @@ const uglify = require('gulp-uglify-es').default
 const autoprefixer = require('gulp-autoprefixer')
 const image = require('gulp-imagemin')
 const del = require('del')
+const minify = require("gulp-babel-minify");
 const fileinclude = require('gulp-file-include')
 //Main LiteBox Modules
 const settings = require('./litebox/config/settings.js')
@@ -44,7 +45,11 @@ function script(){
       `${settingsPath.mainSourceRoot}/${settingsPath.mainIndexRoot}/*.js`,
    ])
       .pipe(concat('script.min.js'))
-      .pipe(uglify())
+      .pipe(minify({
+         mangle: {
+           keepClassName: true
+         }
+       }))
       .pipe(dest(`${settingsPath.mainSourceRoot}/${settingsPath.assetsRoot}/js/`))
       .pipe(browserSync.stream())
 }

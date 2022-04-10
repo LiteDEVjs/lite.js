@@ -13,8 +13,8 @@ body.frozen {
 }
 
 #root {
-   max-width: 100%;
-   min-height: 100%;
+   width: 100vw;
+   height: 100vh;
    position: relative;
    overflow: hidden;
    display: flex;
@@ -29,4 +29,8 @@ body.frozen {
 
 .page {
    flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
